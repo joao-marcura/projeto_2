@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpor" content="width=device-width,initial-scale=1.0">
+	<title>ChatBot - IBM Watson Assistant</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/ibmWatson.js"></script>
+</head>
+
+<body>
+	<h1> ChatBot - Biblioteca </h1>
+	<form name="chatForm" method="post">
+		<input type="text" size="100px" name="textMessage"/>
+		<input type="button" onclick="sendMessageToAssistant();" value="Enviar"/>
+	</form>
+	<br>
+	<div id="chat"></div>
+</body>
+
+</html>
