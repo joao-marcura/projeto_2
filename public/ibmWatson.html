@@ -2,21 +2,96 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewpor" content="width=device-width,initial-scale=1.0">
-	<title>ChatBot - IBM Watson Assistant</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/ibmWatson.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewpor" content="width=device-width,initial-scale=1.0">
+    <title>ChatBot - IBM Watson Assistant</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/ibmWatson.js"></script>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
 <body>
-	<h1> ChatBot - Biblioteca </h1>
-	<form name="chatForm" method="post">
-		<input type="text" size="100px" name="textMessage"/>
-		<input type="button" onclick="sendMessageToAssistant();" value="Enviar"/>
-	</form>
-	<br>
-	<div id="chat"></div>
+    <header class="only-color">
+        <!-- sticky menu -->
+        <div class="sticky-wrapper">
+            <div class="sticky-menu">
+                <div class="grid-row clear-fix">
+                    <!-- logo -->
+                    <a href="index.html" class="logo">
+                        <img src="img/Smart_Logo.png" data-at2x="img/Smart_Logo.png" alt>
+                        <h1>Smart Library</h1>
+                    </a>
+                    <!-- / logo -->
+                    <nav class="main-nav">
+                        <ul class="clear-fix">
+                            <li>
+                                <a href="index.html" class="active">Home</a>
+                            </li>
+                            <li class="megamenu">
+                                <a href="http://localhost:3001/ibmWatson.html">Chat</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- sticky menu -->
+    </header>
+    <div class="parallaxed">
+        <div class="parallax-image" data-parallax-left="0.5" data-parallax-top="0.3" data-parallax-scroll-speed="0.5">
+            <img src="img/parallax.png" alt="">
+        </div>
+        <div class="grid-row clear-fix" style="text-align: center">
+            <h1 style="color: white">Fale com a Library</h1>
+        </div>
+        <div class="them-mask bg-color-1"></div>
+        <div class="grid-row">
+            <div class="grid-col-row clear-fix">
+                <div id='chatborder'>
+                    <div class="scroll">
+                        <div id="chat"></div>
+                        <p id="chatlog7" class="chatlog">&nbsp;</p>
+                        <p id="chatlog6" class="chatlog">&nbsp;</p>
+                        <p id="chatlog5" class="chatlog">&nbsp;</p>
+                        <p id="chatlog4" class="chatlog">&nbsp;</p>
+                        <p id="chatlog3" class="chatlog">&nbsp;</p>
+                        <p id="chatlog2" class="chatlog">&nbsp;</p>
+                    </div>
+                    <form name="chatForm" method="post">
+                        <textarea id="textMessage" name="textMessage"></textarea>
+                        <input type="button" class="btn-enviar" onclick="sendMessageToAssistant();" value="Enviar" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="grid-row">
+            <div class="grid-col-row clear-fix">
+                <section class="grid-col grid-col-4 footer-about">
+                    <h2 class="corner-radius">Sobre nós</h2>
+                    <address>
+						<p></p>
+						<a href="tel:123-123456789" class="phone-number">123-123456789</a>
+						<br />
+						<a href="mailto:contato@sl.com" class="email">contato@sl.com</a>
+						<br />
+						<a href="www.smartlibrary.com" class="site">www.smartlibrary.com</a>
+						<br />
+						<a href="www.smartlibrary.com" class="address">250 Biscayne Blvd. (North) 11st Floor<br/>New World Tower Miami, 33148</a>
+					</address>
+                </section>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="grid-row clear-fix">
+                <div class="copyright">Smart Library<span></span> 2015 . All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
