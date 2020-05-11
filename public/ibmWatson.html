@@ -7,10 +7,13 @@
     <title>ChatBot - IBM Watson Assistant</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/ibmWatson.js"></script>
+	<script src="js/recorder.js"></script>
+	<script src="js/audioControl.js"></script>
     <link rel="shortcut icon" href="img/phpThumb_generated_thumbnailico" />
     <link rel="stylesheet" href="css/chatbot.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">	
 </head>
 
 <body>
@@ -63,6 +66,8 @@
                     <form name="chatForm" method="post">
                         <textarea id="textMessage" name="textMessage"></textarea>
                         <input type="button" class="btn-enviar" onclick="sendMessageToAssistant();" value="Enviar" />
+						<i id="muteButton" class="fas fa-volume-mute" style="display:none;" onclick="allowAutoPlay();"></i>
+						<i id="recordButton" class="fa fa-microphone-alt" style="font-size:40px;" onclick="controlRecording(this);"></i>
                     </form>
                 </div>
             </div>
@@ -88,7 +93,7 @@
         </div>
         <div class="footer-bottom">
             <div class="grid-row clear-fix">
-                <div class="copyright">Smart Library<span></span> 2015 . All Rights Reserved</div>
+                <div class="copyright">Smart Library<span></span> 2020 . All Rights Reserved</div>
             </div>
         </div>
     </footer>
