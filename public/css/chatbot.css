@@ -36,9 +36,8 @@
   font: 17px arial, sans-serif;
   border-width: 1px;
   border-style: solid;
-  height: 22px;
   width: 100%;
-  background-color: #D6D3D3
+  background-color: white
 }
 
 .btn-enviar{
@@ -53,7 +52,51 @@
     color:white
 }
 
+.btn-enviar:hover{
+	background-color: white;
+	color: black;
+    border: 1px solid black;
+    border-radius: 6px;	
+}
+
 .scroll {
     height:255px;
     overflow:scroll;
+}
+
+i . fa-volume-mute{
+font-size: 36px;
+}
+#muteButton {
+    float: right;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 6px;	
+    background-color: #1887E3;
+    color:white	
+}
+
+#muteButton:hover{
+	background-color: white;
+	color: black;
+    border: 1px solid black;
+    border-radius: 6px;	
+}
+
+#recordButton {
+    width: 100px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 5px 10px;
+    background-color: #1887E3;
+    color:white	
+}
+
+#recordButton:hover{
+	background-color: white;
+	color: black;
+    border: 1px solid black;
+    border-radius: 6px;	
 }
